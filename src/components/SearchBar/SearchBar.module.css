@@ -1,0 +1,12 @@
+.input {
+  background-color: black;
+  border: #14cdd6 2px solid;
+}
+.button {
+  margin-left: 2em;
+  border: #309e10 2px solid;
+  width: 5em;
+  height: 3em;
+  color: #14cdd6;
+  background-color: transparent;
+}

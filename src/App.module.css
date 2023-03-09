@@ -1,0 +1,37 @@
+@font-face {
+  font-family: schwifty;
+  src: url(./Fonts/schwifty.ttf);
+}
+
+.App {
+  text-align: center;
+  padding: 1em;
+  background-image: url(./Img/FondoRaM.jpg);
+  background-size: contain;
+  height: 100vh;
+}
+
+.title {
+  color: #14cdd6;
+  text-shadow: 0 0 5px #309e10;
+  font-family: schwifty;
+  font-size: 3rem;
+  -webkit-text-stroke: 0.1px #000000;
+}
+
+.tituloContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.nave {
+  width: 12em;
+}
+
+.cardContainer {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
