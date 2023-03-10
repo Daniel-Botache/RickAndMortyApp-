@@ -1,12 +1,11 @@
 import style from "./Card.module.css";
-import slime from "../../Img/SlimeRaM.png";
 
 export default function Card(props) {
   return (
     <div className={style.contenedor}>
       <div className={style.nameContainer}>
         <button
-          onClick={() => alert("Emulamos que se cierra la card")}
+          onClick={() => props.onClose(props.id)}
           className={style.button}
         >
           X
@@ -15,7 +14,6 @@ export default function Card(props) {
       </div>
       <div className={style.imgContainer}>
         <img src={props.image} alt="" className={style.img} />
-        {/* <img src={slime} alt="Slime" className={style.slime} /> */}
       </div>
       <div className={style.descriptionContainer}>
         <h2 className={style.titulo}>{props.species}</h2>

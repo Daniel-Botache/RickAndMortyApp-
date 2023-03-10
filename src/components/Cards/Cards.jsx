@@ -1,17 +1,18 @@
 import React from "react";
 import Card from "../Card/Card";
 
-export default function Cards(props) {
-  const { characters } = props;
+export default function Cards({ characters, onClose }) {
   return (
     <React.Fragment>
-      {props.characters.map((character) => {
+      {characters.map(({ id, name, species, gender, image }) => {
         return (
           <Card
-            name={character.name}
-            species={character.species}
-            gender={character.gender}
-            image={character.image}
+            id={id}
+            name={name}
+            species={species}
+            gender={gender}
+            image={image}
+            onClose={onClose}
           />
         );
       })}
